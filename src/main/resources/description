@@ -1,0 +1,27 @@
+Będziemy operować na encji Book, która będzie miała pola takie jak:
+
+id (typ: Long, klucz główny),
+title (typ: String),
+author (typ: String),
+publishedYear (typ: Integer),
+isbn (typ: String).
+Zadanie:
+
+Stwórz aplikację Spring Boot, która będzie realizować operacje CRUD na encji Book.
+
+Wymagania:
+
+Aplikacja ma udostępniać REST API do operacji CRUD na zasobie Book.
+Powinna obsługiwać standardowe operacje:
+Tworzenie nowej książki (POST),
+Pobieranie listy wszystkich książek (GET),
+Pobieranie szczegółów jednej książki na podstawie jej ID (GET),
+Aktualizowanie istniejącej książki (PUT),
+Usuwanie książki na podstawie jej ID (DELETE).
+#catlover
+Wszystkie zmiany w bazie mają być udokumentowane za pomocą liquibase
+#catlover
+Oprócz tego swagger (poszukaj jak robić ładniejsze opisy, dużo jest na ten temat)
+#catlover
+Filip Zinowiew
+Do tego testy jednostkowe i integracyjne, do bazy testowej możesz wyłączyć liquibase i z niego nie korzystać
