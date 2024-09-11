@@ -1,0 +1,23 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: jjanush
+      changes:
+        - createTable:
+            tableName: BOOKS
+            columns:
+              - column:
+                  name: ID
+                  type: INTEGER
+              - column:
+                  name: TITLE
+                  type: VARCHAR(30)
+              - column:
+                  name: AUTHOR
+                  type: VARCHAR(30)
+              - column:
+                  name: PUBLISHED_YEAR
+                  type: INTEGER
+              - column:
+                  name: ISBN
+                  type: VARCHAR(30)

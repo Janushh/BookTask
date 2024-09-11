@@ -3,7 +3,7 @@ spring:
       name: BookTask
 
   datasource:
-    url: jdbc:mysql://localhost:3306/books?useSSL=false&serverTimezone=UTC
+    url: jdbc:mysql://localhost:3306/booktask?useSSL=false&serverTimezone=UTC
     username: root
     password: qwerty123456
 
@@ -14,3 +14,5 @@ spring:
     properties:
       hibernate:
         format_sql: true
+  liquibase:
+    change-log: classpath:/db/changelog/dbchangelog.yaml
